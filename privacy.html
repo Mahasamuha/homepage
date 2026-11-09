@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mahasamuha Privacy Policy</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="How mahasamuha.com and the Mahasamuha app handle your information.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%23ebe8e3' d='M43,6 Q50,2 57,6 L85,22 Q92,26 92,34 L92,66 Q92,74 85,78 L57,94 Q50,98 43,94 L15,78 Q8,74 8,66 L8,34 Q8,26 15,22 Z'/%3E%3Ccircle cx='50' cy='50' r='9' fill='%2333394a'/%3E%3Ccircle cx='36' cy='32' r='7' fill='%234a55b8'/%3E%3Ccircle cx='68' cy='48' r='7' fill='%234a55b8'/%3E%3Ccircle cx='40' cy='68' r='7' fill='%234a55b8'/%3E%3Ccircle cx='88' cy='38' r='5' fill='%23d98c2b'/%3E%3Ccircle cx='58' cy='88' r='5' fill='%235b9e75'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400&display=swap">
+<style>
+/* Layout: full-bleed nav with gutters, two-column hero (1.05fr / 1fr), then hairline-ruled sections on flat paper. */
+:root {
+  --paper: oklch(0.97 0.008 80);
+  --ink: oklch(0.22 0.015 60);
+  --bg: var(--paper);
+  --fg: var(--ink);
+  --text-body: rgba(0, 0, 0, 0.7);
+  --text-muted: rgba(0, 0, 0, 0.55);
+  --divider: rgba(0, 0, 0, 0.08);
+  --divider-strong: rgba(0, 0, 0, 0.12);
+  --inset: oklch(0.93 0.005 80);
+  --bubble-assistant: rgba(0, 0, 0, 0.04);
+  --bubble-user: oklch(0.5 0.16 265);
+  --bubble-user-fg: oklch(0.97 0.008 80);
+  --phrase: oklch(0.62 0.11 155);
+  --memory: oklch(0.72 0.16 60);
+  --status: oklch(0.62 0.11 155);
+  --focus: oklch(0.5 0.16 265);
+  --btn-bg: var(--ink);
+  --btn-fg: var(--paper);
+  --mark-field: oklch(0.93 0.005 80);
+  --glow: oklch(0.97 0.008 80);
+  --panel-shadow: 0 24px 60px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.05) inset;
+  --note-bg: oklch(0.95 0.03 95);
+  --note-title: oklch(0.525 0.106 95);
+  --note-glyph: oklch(0.62 0.126 95);
+  --todo-bg: oklch(0.95 0.03 95);
+  --todo-fg: oklch(0.525 0.106 95);
+  --font: "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --gutter: clamp(16px, 4.4vw, 56px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: var(--ink); --fg: var(--paper);
+    --text-body: rgba(255, 255, 255, 0.72); --text-muted: rgba(255, 255, 255, 0.58);
+    --divider: rgba(255, 255, 255, 0.10); --divider-strong: rgba(255, 255, 255, 0.14);
+    --inset: rgba(255, 255, 255, 0.06); --bubble-assistant: rgba(255, 255, 255, 0.07);
+    --phrase: oklch(0.72 0.16 60); --focus: oklch(0.66 0.13 265);
+    --btn-bg: var(--paper); --btn-fg: var(--ink);
+    --mark-field: oklch(0.90 0.005 80);
+    --panel-shadow: 0 0 0 1px rgba(255, 255, 255, 0.09) inset;
+    --note-bg: rgba(255, 255, 255, 0.06); --note-title: oklch(0.62 0.126 95);
+    --todo-bg: rgba(255, 255, 255, 0.08); --todo-fg: oklch(0.62 0.126 95);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: var(--ink); --fg: var(--paper);
+  --text-body: rgba(255, 255, 255, 0.72); --text-muted: rgba(255, 255, 255, 0.58);
+  --divider: rgba(255, 255, 255, 0.10); --divider-strong: rgba(255, 255, 255, 0.14);
+  --inset: rgba(255, 255, 255, 0.06); --bubble-assistant: rgba(255, 255, 255, 0.07);
+  --phrase: oklch(0.72 0.16 60); --focus: oklch(0.66 0.13 265);
+  --btn-bg: var(--paper); --btn-fg: var(--ink);
+  --mark-field: oklch(0.90 0.005 80);
+  --panel-shadow: 0 0 0 1px rgba(255, 255, 255, 0.09) inset;
+  --note-bg: rgba(255, 255, 255, 0.06); --note-title: oklch(0.62 0.126 95);
+  --todo-bg: rgba(255, 255, 255, 0.08); --todo-fg: oklch(0.62 0.126 95);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font-family: var(--font); font-size: 16px; line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; }
+.band {
+  padding-left: max(var(--gutter), env(safe-area-inset-left, 0px));
+  padding-right: max(var(--gutter), env(safe-area-inset-right, 0px));
+}
+.inner { max-width: 1320px; margin: 0 auto; }
+
+.focus:focus { outline: none; }
+.focus:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: 4px; }
+
+.eyebrow {
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--text-muted); margin: 0;
+}
+
+/* nav */
+.nav { border-bottom: 1px solid var(--divider); padding-block: 20px; }
+.nav .inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+.lockup { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.wordmark { font-weight: 500; font-size: 17px; letter-spacing: 0.005em; }
+.links { display: flex; gap: 28px; flex-wrap: wrap; }
+.links a {
+  text-decoration: none; font-size: 14px; font-weight: 500; opacity: 0.75;
+  padding: 6px 0; border-bottom: 1.5px solid transparent; transition: opacity 150ms;
+}
+.links a:hover { opacity: 1; }
+.links a[aria-current="page"] { opacity: 1; border-bottom-color: currentColor; }
+.mark { display: block; flex-shrink: 0; overflow: visible; }
+
+/* buttons */
+.btn {
+  display: inline-flex; align-items: center; gap: 8px; text-decoration: none;
+  font: 500 15px/1.2 var(--font); letter-spacing: 0.005em;
+  padding: 14px 22px; border-radius: 8px; background: var(--btn-bg); color: var(--btn-fg);
+  transition: opacity 150ms;
+}
+.btn:hover { opacity: 0.88; }
+.btn.ghost { background: transparent; color: var(--fg); padding: 14px 12px; opacity: 0.75; }
+.btn.ghost:hover { opacity: 1; }
+
+/* hero */
+.hero { padding-block: clamp(48px, 8vw, 88px) clamp(40px, 6vw, 72px); }
+.hero .inner { display: grid; grid-template-columns: 1.05fr 1fr; gap: 56px; align-items: center; }
+.hero-copy { display: flex; flex-direction: column; gap: 28px; max-width: 580px; min-width: 0; }
+h1 {
+  margin: 0; font-weight: 500; font-size: clamp(38px, 5.2vw, 56px);
+  line-height: 1.05; letter-spacing: -0.015em; text-wrap: balance;
+}
+h1 .phrase { color: var(--phrase); }
+.lede { margin: 0; font-size: 17px; line-height: 1.6; color: var(--text-body); max-width: 500px; }
+.ctas { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+.status { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text-muted); }
+.dot { width: 7px; height: 7px; border-radius: 50%; background: var(--status); flex-shrink: 0; }
+
+/* conversation panel */
+.panel {
+  background: var(--bg); border-radius: 14px; box-shadow: var(--panel-shadow);
+  padding: 20px; display: flex; flex-direction: column; gap: 12px; min-width: 0;
+}
+.panel-head, .panel-foot { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.panel-head { padding-bottom: 12px; border-bottom: 1px solid var(--divider); }
+.panel-foot { padding-top: 12px; border-top: 1px solid var(--divider); }
+.bubble { max-width: 86%; padding: 11px 14px; border-radius: 14px; font-size: 14px; line-height: 1.5; }
+.bubble.user { align-self: flex-end; background: var(--bubble-user); color: var(--bubble-user-fg); border-bottom-right-radius: 4px; }
+.bubble.assistant { align-self: flex-start; background: var(--bubble-assistant); border-bottom-left-radius: 4px; }
+.memory {
+  background: var(--inset); border-radius: 10px; padding: 11px 14px;
+  font-size: 13px; line-height: 1.5; color: var(--text-body); display: grid; gap: 6px;
+}
+.memory .eyebrow { font-size: 10px; display: flex; align-items: center; gap: 7px; }
+.memory .dot { width: 6px; height: 6px; background: var(--memory); }
+
+/* sections */
+.section { border-top: 1px solid var(--divider-strong); padding-block: clamp(56px, 8vw, 120px); }
+.section .inner { display: grid; grid-template-columns: minmax(160px, 1fr) 3fr; gap: 40px; }
+.section-body { display: flex; flex-direction: column; gap: 28px; min-width: 0; max-width: 860px; }
+h2 { margin: 0; font-weight: 500; font-size: clamp(28px, 3.4vw, 36px); line-height: 1.15; letter-spacing: -0.01em; text-wrap: balance; }
+.body { margin: 0; font-size: 17px; line-height: 1.6; color: var(--text-body); max-width: 62ch; }
+.three { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
+.three > div { display: grid; gap: 10px; align-content: start; padding-top: 16px; border-top: 1px solid var(--divider); }
+.three p:not(.eyebrow) { margin: 0; font-size: 15px; line-height: 1.55; color: var(--text-body); }
+
+.facts { margin: 0; display: grid; grid-template-columns: max-content 1fr; }
+.facts dt, .facts dd { padding-block: 14px; border-bottom: 1px solid var(--divider); margin: 0; }
+.facts dt { padding-right: 32px; }
+.facts dd { font-size: 16px; min-width: 0; overflow-wrap: anywhere; }
+.facts dd a { text-underline-offset: 3px; text-decoration-color: var(--divider-strong); }
+
+.todo {
+  background: var(--todo-bg); color: var(--todo-fg); font-weight: 500;
+  border-radius: 4px; padding: 1px 6px; box-decoration-break: clone; -webkit-box-decoration-break: clone;
+}
+
+/* footer */
+.foot { border-top: 1px solid var(--divider); padding-block: 28px; }
+.foot .inner { display: flex; justify-content: space-between; align-items: center; gap: 16px 24px; flex-wrap: wrap; }
+.foot .meta { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; font-size: 13px; color: var(--text-muted); }
+.foot a { text-decoration: none; }
+.foot a:hover { color: var(--fg); }
+
+/* policy */
+.doc { padding-block: clamp(48px, 7vw, 96px); }
+.doc .inner { max-width: 760px; display: flex; flex-direction: column; gap: 40px; }
+.doc header { display: flex; flex-direction: column; gap: 18px; }
+.doc h1 { font-size: clamp(36px, 5vw, 56px); }
+.doc section { display: flex; flex-direction: column; gap: 14px; padding-top: 28px; border-top: 1px solid var(--divider); }
+.doc h2 { font-size: 24px; line-height: 1.25; letter-spacing: 0; display: flex; gap: 14px; align-items: baseline; }
+.doc h2 .num { font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; color: var(--text-muted); font-weight: 400; }
+.doc p, .doc li { margin: 0; font-size: 16px; line-height: 1.65; color: var(--text-body); }
+.doc ul { margin: 0; padding-left: 20px; display: grid; gap: 8px; }
+.notice {
+  background: var(--note-bg); border-radius: 8px; padding: 16px 18px;
+  display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; align-items: start;
+}
+.glyph {
+  width: 20px; height: 20px; border-radius: 50%; background: var(--note-glyph); color: var(--paper);
+  font: 600 12px/20px var(--font); text-align: center; grid-row: span 2; margin-top: 1px;
+}
+.notice strong { color: var(--note-title); font-weight: 600; font-size: 15px; }
+.notice p { margin: 0; font-size: 15px; line-height: 1.55; color: var(--text-body); }
+
+@media (max-width: 900px) {
+  .hero .inner, .section .inner { grid-template-columns: 1fr; gap: 40px; }
+  .section .inner { gap: 20px; }
+}
+@media (max-width: 640px) {
+  .three { grid-template-columns: 1fr; gap: 20px; }
+  .facts { grid-template-columns: 1fr; }
+  .facts dt { border-bottom: 0; padding-bottom: 0; }
+  .facts dd { padding-top: 6px; }
+  .links { gap: 20px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+
+<header class="nav band"><div class="inner"><a class="lockup focus" href="./" aria-label="mahasamuha home"><svg class="mark" width="30" height="30" viewBox="0 0 100 100" role="img" aria-label=""><defs><filter id="glow2" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="0.9"/></filter></defs><g filter="url(#glow2)"><circle cx="18" cy="22" r="5.6" fill="var(--glow)"/><circle cx="88" cy="38" r="5.6" fill="var(--glow)"/><circle cx="58" cy="88" r="6" fill="var(--glow)"/><circle cx="10" cy="52" r="5.4" fill="var(--glow)"/><circle cx="72" cy="16" r="5.6" fill="var(--glow)"/><circle cx="20" cy="82" r="5.8" fill="var(--glow)"/></g><path fill="var(--mark-field)" d="M43.05,5.97 Q50,2 56.95,5.97 L85.05,22.03 Q92,26 92,34 L92,66 Q92,74 85.05,77.97 L56.95,94.03 Q50,98 43.05,94.03 L14.95,77.97 Q8,74 8,66 L8,34 Q8,26 14.95,22.03 Z"/><g fill="none" stroke-linecap="round" stroke-width="1.7"><path d="M50,50 Q39.76,43.52 36,32" stroke="oklch(0.5 0.16 265)" opacity="0.7"/><path d="M50,50 Q59.32,51.88 68,48" stroke="oklch(0.5 0.16 265)" opacity="0.7"/><path d="M50,50 Q41.76,57.2 40,68" stroke="oklch(0.5 0.16 265)" opacity="0.7"/><path d="M18,22 Q24.8,30.96 36,32" stroke="oklch(0.5 0.16 265)" opacity="0.7"/><path d="M88,38 Q80.2,47.4 68,48" stroke="oklch(0.62 0.11 155)" opacity="0.7"/><path d="M58,88 Q45,81.6 40,68" stroke="oklch(0.62 0.11 155)" opacity="0.7"/><path d="M10,52 Q20.52,68.4 40,68" stroke="oklch(0.62 0.11 155)" opacity="0.7"/><path d="M10,52 Q17,34.2 36,32" stroke="oklch(0.5 0.16 265)" opacity="0.7"/><path d="M72,16 Q62.32,31.04 68,48" stroke="oklch(0.5 0.16 265)" opacity="0.7"/><path d="M20,82 Q26.92,70.6 40,68" stroke="oklch(0.62 0.11 155)" opacity="0.7"/><path d="M72,16 Q34.12,39.64 20,82" stroke="oklch(0.72 0.16 60)" opacity="0.7"/></g><circle cx="50" cy="50" r="7" fill="oklch(0.28 0.02 260)"/><circle cx="36" cy="32" r="5" fill="oklch(0.5 0.16 265)"/><circle cx="68" cy="48" r="5" fill="oklch(0.5 0.16 265)"/><circle cx="40" cy="68" r="5" fill="oklch(0.5 0.16 265)"/><circle cx="18" cy="22" r="3.8" fill="oklch(0.5 0.16 265)"/><circle cx="88" cy="38" r="3.8" fill="oklch(0.72 0.16 60)"/><circle cx="58" cy="88" r="4.2" fill="oklch(0.62 0.11 155)"/><circle cx="10" cy="52" r="3.6" fill="oklch(0.62 0.11 155)"/><circle cx="72" cy="16" r="3.8" fill="oklch(0.5 0.16 265)"/><circle cx="20" cy="82" r="4" fill="oklch(0.72 0.16 60)"/></svg><span class="wordmark">mahasamuha</span></a><nav class="links" aria-label="site"><a class="focus" href="./#about">about</a><a class="focus" href="privacy.html" aria-current="page">privacy</a><a class="focus" href="./#company">contact</a></nav></div></header>
+<main class="doc band"><div class="inner">
+  <header>
+    <p class="eyebrow">privacy policy &middot; effective november 2026</p>
+    <h1>Privacy policy</h1>
+    <p class="body">This policy explains what information mahasamuha.com and the Mahasamuha app for Android collect, how it is used, and how to reach us about it.</p>
+  </header>
+
+  <section>
+    <h2><span class="num">01</span>Who we are</h2>
+    <p>The website and app are operated by Mahasamuha LLC, a Virginia limited liability company (&ldquo;we&rdquo; or &ldquo;us&rdquo;). You can reach us at <a class="focus" href="mailto:contact@mahasamuha.com">contact@mahasamuha.com</a>.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span>This website</h2>
+    <p>The website has no accounts, forms, cookies, analytics or advertising. Like any website, it is delivered by a hosting provider (GitHub Pages) that processes your IP address and basic request details to serve pages and protect against abuse. We have not enabled analytics with that provider.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span>The Mahasamuha app</h2>
+    <p>The app works with a backend server that you run and configure. To answer you, the app sends the following to that server:</p>
+    <ul>
+      <li>What you type, and transcripts of what you say. Voice audio is processed on your device and never leaves it.</li>
+      <li>Your conversation history and the memories your server builds from it.</li>
+      <li>The credentials you use to sign in to your server.</li>
+      <li>Your approximate location, used to get weather for where you are. The app does not use precise location.</li>
+      <li>Names and phone numbers from your contacts that match a request, such as the person you ask to call or text.</li>
+    </ul>
+    <p>This data travels over an encrypted connection and is stored on your device and on your server. Because it leaves your device, the app&rsquo;s Google Play listing shows it as collected. It is not sent to us. Mahasamuha LLC does not operate your server and has no access to it.</p>
+    <p>Some permissions are used only on your phone or your own network:</p>
+    <ul>
+      <li>Microphone: voice is turned into text on your device. Audio is not recorded or sent anywhere.</li>
+      <li>Text messages: when you ask the app to send a text, your phone sends it through your carrier like any other text. Its wording is part of your transcript.</li>
+      <li>Local network: used to find speakers and cast to them. That traffic stays on your network.</li>
+    </ul>
+    <p>The app does not share this data with anyone else. Your server may pass data to services you connect it to, such as an AI model provider. You choose those services, and their own privacy policies apply to what they receive.</p>
+    <p>The app contains no analytics, advertising or crash-reporting code. When you install it through Google Play, Google handles information about that download under its own privacy policy.</p>
+    <p>You control deletion. Removing data from your server deletes it there, and uninstalling the app removes what it stored on your device.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span>What we don&rsquo;t do</h2>
+    <p>We do not sell personal information, and we do not use it for advertising.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span>Children</h2>
+    <p>Mahasamuha is not directed to children under 13, and we do not knowingly collect personal information from them. If you believe a child has provided us information, email us and we will delete it.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">06</span>Changes to this policy</h2>
+    <p>When this policy changes, we update the effective date above. Material changes to how the app handles data will be announced in the app before they take effect.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">07</span>Contact</h2>
+    <p>Questions or requests about your information go to <a class="focus" href="mailto:contact@mahasamuha.com">contact@mahasamuha.com</a>.</p>
+  </section>
+</div></main>
+<footer class="foot band"><div class="inner"><div class="lockup"><svg class="mark" width="22" height="22" viewBox="0 0 100 100" role="img" aria-label=""><defs><filter id="glow3" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="0.9"/></filter></defs><g filter="url(#glow3)"><circle cx="18" cy="22" r="5.6" fill="var(--glow)"/><circle cx="88" cy="38" r="5.6" fill="var(--glow)"/><circle cx="58" cy="88" r="6" fill="var(--glow)"/><circle cx="10" cy="52" r="5.4" fill="var(--glow)"/><circle cx="72" cy="16" r="5.6" fill="var(--glow)"/><circle cx="20" cy="82" r="5.8" fill="var(--glow)"/></g><path fill="var(--mark-field)" d="M43.05,5.97 Q50,2 56.95,5.97 L85.05,22.03 Q92,26 92,34 L92,66 Q92,74 85.05,77.97 L56.95,94.03 Q50,98 43.05,94.03 L14.95,77.97 Q8,74 8,66 L8,34 Q8,26 14.95,22.03 Z"/><g fill="none" stroke-linecap="round" stroke-width="1.7"><path d="M50,50 Q39.76,43.52 36,32" stroke="oklch(0.5 0.16 265)" opacity="0.7"/><path d="M50,50 Q59.32,51.88 68,48" stroke="oklch(0.5 0.16 265)" opacity="0.7"/><path d="M50,50 Q41.76,57.2 40,68" stroke="oklch(0.5 0.16 265)" opacity="0.7"/><path d="M18,22 Q24.8,30.96 36,32" stroke="oklch(0.5 0.16 265)" opacity="0.7"/><path d="M88,38 Q80.2,47.4 68,48" stroke="oklch(0.62 0.11 155)" opacity="0.7"/><path d="M58,88 Q45,81.6 40,68" stroke="oklch(0.62 0.11 155)" opacity="0.7"/><path d="M10,52 Q20.52,68.4 40,68" stroke="oklch(0.62 0.11 155)" opacity="0.7"/><path d="M10,52 Q17,34.2 36,32" stroke="oklch(0.5 0.16 265)" opacity="0.7"/><path d="M72,16 Q62.32,31.04 68,48" stroke="oklch(0.5 0.16 265)" opacity="0.7"/><path d="M20,82 Q26.92,70.6 40,68" stroke="oklch(0.62 0.11 155)" opacity="0.7"/><path d="M72,16 Q34.12,39.64 20,82" stroke="oklch(0.72 0.16 60)" opacity="0.7"/></g><circle cx="50" cy="50" r="7" fill="oklch(0.28 0.02 260)"/><circle cx="36" cy="32" r="5" fill="oklch(0.5 0.16 265)"/><circle cx="68" cy="48" r="5" fill="oklch(0.5 0.16 265)"/><circle cx="40" cy="68" r="5" fill="oklch(0.5 0.16 265)"/><circle cx="18" cy="22" r="3.8" fill="oklch(0.5 0.16 265)"/><circle cx="88" cy="38" r="3.8" fill="oklch(0.72 0.16 60)"/><circle cx="58" cy="88" r="4.2" fill="oklch(0.62 0.11 155)"/><circle cx="10" cy="52" r="3.6" fill="oklch(0.62 0.11 155)"/><circle cx="72" cy="16" r="3.8" fill="oklch(0.5 0.16 265)"/><circle cx="20" cy="82" r="4" fill="oklch(0.72 0.16 60)"/></svg><span class="wordmark" style="font-size:15px">mahasamuha</span></div><div class="meta"><span>&copy; 2026 Mahasamuha LLC</span><span aria-hidden="true">&middot;</span><a class="focus" href="privacy.html">privacy</a><span aria-hidden="true">&middot;</span><a class="focus" href="mailto:contact@mahasamuha.com">contact@mahasamuha.com</a></div></div></footer>
+
+</body>
+</html>
